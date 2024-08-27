@@ -5,6 +5,7 @@ const HomePage = (props) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchNews = async () => {
+      setLoading(true);
       try {
         const response = await fetch(
           `https://newsapi.org/v2/everything?q=${props.topic}&apiKey=16bf82667c414864849b17634fe10a55`
@@ -13,7 +14,6 @@ const HomePage = (props) => {
         setArticles(data.articles);
         setLoading(false);
       } catch (error) {
-        // console.error("Error fetching news:", error);
         setLoading(false);
       }
     };

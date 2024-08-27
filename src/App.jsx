@@ -1,10 +1,11 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
+// import MyAPi from "./components/MyAPi";
 import HomePage from "./components/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <>
+    <div className="font-Poppins container mx-auto">
       <BrowserRouter>
         <NavBar logoName="Online" />
         <Routes>
@@ -21,7 +22,7 @@ function App() {
           ></Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
