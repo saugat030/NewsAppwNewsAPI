@@ -1,15 +1,26 @@
 import React from "react";
-
+import one from "../static/One1.png";
+import two from "../static/Two.png";
+import three from "../static/Three.png";
+import four from "../static/Four.png";
 const NewsGrid = () => {
   return (
-    <div className="h-[570px] bg-red-300 flex p-4">
-      <div className="h-full bg-blue-200 w-1/2 p-4 ">One</div>
-      <div className="h-full flex-col p-4 bg-black w-1/ 2">
-        <div className="bg-purple-300 flex h-1/2 p-4">
-          <div className="p-4 bg-slate-300  flex-1">Two</div>
-          <div className="p-4 bg-yellow-400  flex-1">Three</div>
+    <div className="h-[570px] flex">
+      <div className="h-full w-1/2 p-2">
+        <img src={one} className="h-full w-full" />
+      </div>
+      <div className="h-full flex-col flex-1">
+        <div className="flex h-1/2">
+          <div className="flex-1  p-2">
+            <img src={two} className="h-full w-full" />
+          </div>
+          <div className="flex-1  p-2">
+            <img src={three} className="h-full w-full" />
+          </div>
         </div>
-        <div className="p-4 bg-green-300 h-1/2">Four</div>
+        <div className="h-1/2  p-2">
+          <img src={four} className="h-full w-full" />
+        </div>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { TiWatch } from "react-icons/ti";
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { TiSocialInstagramCircular } from "react-icons/ti";
 import { TiSocialYoutube } from "react-icons/ti";
+import { TiSocialTwitter } from "react-icons/ti";
 const TopBar = () => {
   return (
     <div className="h-14 flex justify-between items-center text-sm">
@@ -26,6 +27,7 @@ const TopBar = () => {
       <div className="flex gap-2">
         <TiSocialFacebookCircular size={32} color="blue" />
         <TiSocialInstagramCircular size={32} color="red" />
+        <TiSocialTwitter size={32} color="cyan" />
         <TiSocialYoutube size={32} color="red" />
       </div>
     </div>

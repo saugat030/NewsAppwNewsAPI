@@ -6,8 +6,13 @@ const NavBar = () => {
     <header>
       <TopBar />
       <nav>
-        <figure className="text-4xl p-4 my-10">
-          <img src="" alt="NEWS ONLINE" />
+        <figure className="text-5xl p-4 my-10">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/21/21601.png"
+            alt="NEWS ONLINE"
+            className="h-28 w-28 inline"
+          />
+          <span className="pl-2">Online</span>
         </figure>
         <div className="flex justify-between items-center bg-[#393939] h-20 text-xl mb-6">
           <ul className="flex items-center h-full">
