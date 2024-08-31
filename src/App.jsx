@@ -3,11 +3,13 @@ import NavBar from "./components/NavBar";
 // import MyAPi from "./components/MyAPi";
 import HomePage from "./components/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NewsGrid from "./components/NewsGrid";
 function App() {
   return (
     <div className="font-Poppins container mx-auto">
       <BrowserRouter>
         <NavBar logoName="Online" />
+        <NewsGrid />
         <Routes>
           <Route exact path="/" element={<HomePage topic="news" />}></Route>
           <Route
